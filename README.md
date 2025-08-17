@@ -28,7 +28,7 @@ With `input_fsm`, you keep all of this in one clean definition.
 ## Installation
 
 ### HACS (recommended)
-1. Add this repository as a **custom integration** in HACS (category: Integration).  
+1. Add this repository (https://github.com/jeroen8087/input_fsm) as a **custom integration** in HACS (category: Integration).  
 2. Search for **Input FSM** in HACS and install.  
 3. Restart Home Assistant once to activate.  
 
