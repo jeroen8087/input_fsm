@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15" version="28.1.0">
+  <diagram id="AbqeYX1ApGPXokCqVA4K" name="Pagina-1">
+    <mxGraphModel dx="1278" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="configuration.yaml" link="https://example.com/introduction" tooltip="Go to Introduction" id="3">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="104" y="128" width="148" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="7" value="package:&#xa;fsm_livingroom.yaml" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="20" y="232" width="131" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="package:&#xa;fsm_alarm.yaml" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="201" y="232" width="142" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-30" value="package:&#xa;fsm_livingroom.yaml" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="400" height="280" as="geometry" />
+        </mxCell>
+        <UserObject label="sensors" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-31">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="420" y="100" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0eSNXu_fMR41W-sJLn3B-32" target="0eSNXu_fMR41W-sJLn3B-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="sensors" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-32">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="430" y="112" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0eSNXu_fMR41W-sJLn3B-33" target="0eSNXu_fMR41W-sJLn3B-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0eSNXu_fMR41W-sJLn3B-33" target="0eSNXu_fMR41W-sJLn3B-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0eSNXu_fMR41W-sJLn3B-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0eSNXu_fMR41W-sJLn3B-33" target="0eSNXu_fMR41W-sJLn3B-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="input_fsm" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-33">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="555" y="180" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="scripts" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-37">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="430" y="280" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="automations" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-38">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="555" y="280" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="services&#xa;(e.g. light.turn_on)" link="https://example.com/introduction" tooltip="Go to Introduction" id="0eSNXu_fMR41W-sJLn3B-39">
+          <mxCell style="whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="680" y="280" width="90" height="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
