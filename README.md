@@ -13,8 +13,6 @@ Instead of endless conditionals, you can express the same logic as a finite-stat
 - **Triggers** represent events that cause change (motion, button press, timeout).  
 - **Transitions** describe how you move between states, optionally running actions.  
 
-With `input_fsm`, you keep all of this in one clean definition.
-
 ```mermaid
 stateDiagram-v2
   [*] --> off
@@ -22,6 +20,11 @@ stateDiagram-v2
   on --> dimmed: no_motion
   dimmed --> off: timeout
 ```
+
+With `input_fsm`, you keep all of this in one clean definition.
+
+![Input FSM Architecture](docs/overview.svg)
+
 ---
 
 ## Features
