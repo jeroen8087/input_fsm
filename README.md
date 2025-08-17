@@ -5,7 +5,8 @@ A Home Assistant integration that brings [finite-state machine (FSM)](https://en
 [![HACS](https://github.com/jeroen8087/input_fsm/actions/workflows/hacs.yml/badge.svg)](https://github.com/jeroen8087/input_fsm/actions/workflows/hacs.yml)
 
 ## Why would I use this?
-Home Assistant automations can become complex when you try to model behavior over time. For example, you might want lights to behave differently when you’re at home, away, or sleeping, with extra conditions layered on top.  
+Home Assistant automations can become complex when you try to model behavior over time. For example, you might want lights to behave differently when you’re at home, away, or sleeping, with extra conditions layered on top.
+
 Instead of endless conditionals, you can express the same logic as a finite-state machine:
 
 - **States** represent the current mode (e.g. light off, on, dimmed).  
@@ -14,6 +15,13 @@ Instead of endless conditionals, you can express the same logic as a finite-stat
 
 With `input_fsm`, you keep all of this in one clean definition.
 
+```mermaid
+stateDiagram-v2
+  [*] --> off
+  off --> on: motion
+  on --> dimmed: no_motion
+  dimmed --> off: timeout
+```
 ---
 
 ## Features
