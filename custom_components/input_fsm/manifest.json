@@ -3,6 +3,7 @@
   "name": "Input FSM",
   "version": "0.3.2",
   "documentation": "https://github.com/jeroen8087/input_fsm",
+  "issue_tracker": "https://github.com/jeroen8087/input_fsm/issues",
   "dependencies": [],
   "codeowners": ["@jeroen8087"],
   "requirements": [],
