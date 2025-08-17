@@ -1,14 +1,14 @@
 {
   "domain": "input_fsm",
   "name": "Input FSM",
-  "version": "0.3.2",
-  "documentation": "https://github.com/jeroen8087/input_fsm",
-  "issue_tracker": "https://github.com/jeroen8087/input_fsm/issues",
-  "dependencies": [],
-  "codeowners": ["@jeroen8087"],
-  "requirements": [],
-  "iot_class": "calculated",
-  "integration_type": "helper",
   "after_dependencies": [],
-  "loggers": ["custom_components.input_fsm"]
+  "codeowners": ["@jeroen8087"],
+  "dependencies": [],
+  "documentation": "https://github.com/jeroen8087/input_fsm",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/jeroen8087/input_fsm/issues",
+  "loggers": ["custom_components.input_fsm"],
+  "requirements": [],
+  "version": "0.3.2"
 }
