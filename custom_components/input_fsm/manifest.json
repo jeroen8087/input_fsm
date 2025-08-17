@@ -1,0 +1,9 @@
+{
+  "domain": "input_fsm",
+  "name": "Input FSM",
+  "version": "0.3.2",
+  "documentation": "https://github.com/yourname/input_fsm",
+  "dependencies": [],
+  "codeowners": ["@yourgithub"],
+  "requirements": []
+}

@@ -1,0 +1,33 @@
+trigger:
+  name: Trigger
+  description: "Trigger a transition on an FSM."
+  fields:
+    entity_id:
+      description: "The FSM entity to trigger"
+      example: "input_fsm.verlichting_status"
+    trigger:
+      description: "The trigger name (e.g. 'beweging')"
+      example: "beweging"
+
+set_state:
+  name: Set State
+  description: "Force the state of an FSM."
+  fields:
+    entity_id:
+      description: "The FSM entity"
+      example: "input_fsm.verlichting_status"
+    state:
+      description: "The destination state name"
+      example: "aan"
+
+reset:
+  name: Reset
+  description: "Reset the FSM to its initial state."
+  fields:
+    entity_id:
+      description: "The FSM entity"
+      example: "input_fsm.verlichting_status"
+
+reload:
+  name: Reload
+  description: "Reload input_fsm YAML configuration without restarting Home Assistant."
