@@ -133,6 +133,7 @@ This allows very fast iteration without restarting Home Assistant.
 ---
 
 ## Advanced options
+For a full configuration reference, see the [Input FSM Configuration Reference](docs/input_fsm_config_reference.md).
 
 ### Guards
 Require a condition to pass before a transition fires:
