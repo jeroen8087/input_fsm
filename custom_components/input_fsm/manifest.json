@@ -10,6 +10,5 @@
   "iot_class": "calculated",
   "integration_type": "helper",
   "after_dependencies": [],
-  "loggers": ["custom_components.input_fsm"],
-  "homeassistant": "2024.6.0"  
+  "loggers": ["custom_components.input_fsm"]
 }
