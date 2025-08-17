@@ -1,6 +1,9 @@
 # input_fsm
 A Home Assistant integration that brings finite-state machine (FSM) logic to your automations. Define states, triggers, and transitions in YAML to model complex behavior with ease. Add structure and clarity to your automations — powerful, flexible, and surprisingly simple to use.
 
+[![Hassfest](https://github.com/jeroen8087/input_fsm/actions/workflows/hassfest.yml/badge.svg)](https://github.com/jeroen8087/input_fsm/actions/workflows/hassfest.yml)
+[![HACS](https://github.com/jeroen8087/input_fsm/actions/workflows/hacs.yml/badge.svg)](https://github.com/jeroen8087/input_fsm/actions/workflows/hacs.yml)
+
 ## Why would I use this?
 Home Assistant automations can become complex when you try to model behavior over time. For example, you might want lights to behave differently when you’re at home, away, or sleeping, with extra conditions layered on top.  
 Instead of endless conditionals, you can express the same logic as a finite-state machine:
