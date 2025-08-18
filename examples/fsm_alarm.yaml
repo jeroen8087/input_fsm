@@ -1,0 +1,64 @@
+# Alarm FSM
+# - "off": system disabled
+# - "on": fully armed
+# - "guard": perimeter only
+# - "enter"/"exit": timed delays for arming/disarming
+# - "alarm"/"silent": triggered states
+#
+# Typical flow:
+#   off -> exit -> on
+#   on/guard -> enter -> alarm (if not disarmed)
+#   alarm -> silent (if configured)
+
+input_fsm:
+  alarm_status:
+    initial: "off"
+    states:
+      - name: "off"
+        description: "Alarm is completely disabled; no monitoring is active."
+      - name: "on"
+        description: "Full alarm mode: all sensors (motion, doors, windows) are active."
+      - name: guard
+        description: "Perimeter guard: only doors and windows are monitored, no motion sensors."
+      - name: alarm
+        description: "Active alarm: triggered by a sensor, siren or notification should be activated."
+      - name: silent
+        description: "Silent alarm: alarm is triggered but without audible sirens (only notifications)."
+      - name: enter
+        description: "Entry delay: someone has entered, awaiting disarm or will escalate to alarm."
+      - name: exit
+        description: "Exit delay: someone is leaving, giving time before arming sensors."
+    transitions:
+      - trigger: entrance
+        source: "on"
+        dest: enter
+      - trigger: entrance
+        source: guard
+        dest: enter
+      - trigger: motion
+        source: "on"
+        dest: alarm
+      - trigger: motion
+        source: enter
+        dest: alarm
+      - trigger: motion
+        source: exit
+        dest: alarm
+      - trigger: keypad
+        source: "off"
+        dest: exit
+      - trigger: keypad
+        source: "*"
+        dest: "off"
+      - trigger: timer_grace
+        source: guard
+        dest: alarm	
+      - trigger: timer_grace
+        source: enter
+        dest: alarm			
+      - trigger: timer_grace
+        source: exit
+        dest: "on"
+      - trigger: timer_silent
+        source: alarm
+        dest: silent
