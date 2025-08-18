@@ -68,22 +68,22 @@ input_fsm:
   livingroom_light:
     initial: "off"
     states:
-      - name: off
+      - name: "off"
         description: "Light is off"
-      - name: on
+      - name: "on"
         description: "Light is fully on"
       - name: dimmed
         description: "Light is dimmed after inactivity"
     transitions:
       - trigger: motion
         source: "*"
-        dest: on
+        dest: "on"
         actions:
           - service: light.turn_on
             target: { entity_id: light.living_room }
 
       - trigger: no_motion
-        source: on
+        source: "on"
         dest: dimmed
         timeout: { seconds: 120, dest: off }
         actions:
@@ -93,7 +93,7 @@ input_fsm:
 
       - trigger: timeout
         source: dimmed
-        dest: off
+        dest: "off"
         actions:
           - service: light.turn_off
             target: { entity_id: light.living_room }
@@ -125,6 +125,8 @@ automation:
           trigger: no_motion
 ```
 
+When defining state names, make sure to review the [YAML Gotchas](docs/yaml_gotchas.md) to avoid YAML boolean pitfalls.
+
 ### 3. Reload without restart
 - Call service: `input_fsm.reload` (reload FSM definitions).  
 - Call service: `automation.reload` (reload automations).  
@@ -152,7 +154,7 @@ Make a trigger apply from any state:
 ```yaml
 - trigger: panic
   source: "*"
-  dest: off
+  dest: "off"
   actions:
     - service: light.turn_off
       target: { entity_id: all }
