@@ -1,0 +1,34 @@
+# Presence FSM
+# - "home": house is occupied
+# - "away": house is unoccupied
+# - "sleeping": house is in sleep mode
+#
+# Typical flow:
+#   home -> leave -> away
+#   away -> arrive -> home
+#   home -> go_to_sleep -> sleeping
+#   sleeping -> wake_up -> home
+
+input_fsm:
+  presence_status:
+    initial: "home"
+    states:
+      - name: home
+        description: "House is occupied"
+      - name: away
+        description: "House is unoccupied"
+      - name: sleeping
+        description: "House is in sleep mode"
+    transitions:
+      - trigger: leave
+        source: home
+        dest: away
+      - trigger: arrive
+        source: away
+        dest: home
+      - trigger: go_to_sleep
+        source: home
+        dest: sleeping
+      - trigger: wake_up
+        source: sleeping
+        dest: home
