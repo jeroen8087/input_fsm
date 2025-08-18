@@ -54,7 +54,7 @@ With `input_fsm`, you keep all of this in one clean definition.
 
 ## Getting started
 
-The easiest way to structure your configuration is with **packages**. That way, your FSM definition, automations, and scripts live together in one file and are easy to reload.
+The easiest way to structure your configuration is with [packages](https://www.home-assistant.io/docs/configuration/packages/). That way, your FSM definition, automations, and scripts live together in one file and are easy to reload.
 
 ### 1. Enable packages in `configuration.yaml`
 ```yaml
