@@ -1,0 +1,41 @@
+# Sleep FSM
+# - "awake": occupants are awake
+# - "going_to_bed": transition period before sleep
+# - "sleeping": occupants are asleep
+# - "waking_up": transition period from sleep to awake
+#
+# Typical flow:
+#   awake -> go_to_bed -> going_to_bed -> sleeping
+#   sleeping -> wake_up -> waking_up -> awake
+#
+# Notes:
+# - Designed for automations that depend on sleep cycles
+# - Transitional states ("going_to_bed", "waking_up") can be used 
+#   for gradual adjustments (lights, heating, ventilation)
+# - Initial state is "awake"
+
+input_fsm:
+  sleep_status:
+    initial: "awake"
+    states:
+      - name: awake
+        description: "Occupants are awake"
+      - name: going_to_bed
+        description: "Occupants are preparing for sleep"
+      - name: sleeping
+        description: "Occupants are asleep"
+      - name: waking_up
+        description: "Occupants are waking up"
+    transitions:
+      - trigger: go_to_bed
+        source: awake
+        dest: going_to_bed
+      - trigger: fall_asleep
+        source: going_to_bed
+        dest: sleeping
+      - trigger: wake_up
+        source: sleeping
+        dest: waking_up
+      - trigger: become_awake
+        source: waking_up
+        dest: awake
