@@ -10,7 +10,7 @@ Home Assistant automations can become complex when you try to model behavior ove
 Instead of endless conditionals, you can express the same logic as a finite-state machine:
 
 - **States** represent the current mode (e.g. light off, on, dimmed).  
-- **Triggers** represent events that cause change (motion, button press, timeout).  
+- **Triggers** represent events that cause change (motion, no motion, timeout).  
 - **Transitions** describe how you move between states, optionally running actions.  
 
 ```mermaid
